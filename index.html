@@ -7,12 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
+
+        header {
+            padding-top: 1rem;
+            font-size: 1.8rem;
+            
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        #tic {
+            color: rgba(255, 0, 0, 0.822);
+            text-shadow: 0px 0px 30px red;
+        }
+
+        #tac {
+            text-shadow: 0px 0px 30px blue;
+            color: rgba(0, 0, 255, 0.692);
+        }
+
+        #toe {
+            text-shadow: 0px 0px 30px green;
+            color: rgba(0, 128, 0, 0.842);
+        }
+
         body {
             display: flex;
             flex-direction: column;
@@ -64,16 +88,18 @@
             justify-content: center;
             margin: 5px;
             text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.596);
-            box-shadow:  2px 2px 10px 0px black inset ;
+            box-shadow: 2px 2px 10px 0px black inset;
             transition: all .4s;
         }
-        .cell:hover{
+
+        .cell:hover {
             background-color: rgb(157, 211, 255);
         }
-        .cell:active{
-            background-color: rgb(255, 83, 83); 
+
+        .cell:active {
+            background-color: rgb(255, 83, 83);
         }
-        
+
 
 
         #reset-button {
@@ -95,12 +121,13 @@
 
         footer {
             display: flex;
-            justify-content:space-around ;
+            justify-content: space-around;
             align-items: center;
             flex-direction: column;
             height: 200px;
             margin-top: 60px;
         }
+
         a {
             text-decoration: none;
             font-size: 13px;
@@ -109,13 +136,16 @@
             justify-content: center;
             align-items: center;
         }
+
         img {
             width: 40px;
             margin: 8px;
         }
-        .git img  {
+
+        .git img {
             filter: invert(1);
         }
+
         footer span {
             text-align: center;
             color: white;
@@ -125,6 +155,14 @@
 </head>
 
 <body>
+    <header>
+        <h1>
+            <span id="tic">Tic</span>
+            <span id="tac">Tac</span>
+            <span id="toe">Toe</span>
+        </h1>
+
+    </header>
     <div class="tic-tac-toe">
         <div class="row">
             <div class="cell" id="cell-1"></div>
@@ -143,11 +181,18 @@
         </div>
     </div>
     <button id="reset-button">Reset</button>
-    
+
     <footer>
-    <a href="https://www.instagram.com/its_zahid83/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png?20210403190622" alt=""><h2>Follow me on its_zahid83</h2></a>
-    <a class="git" href="https://github.com/Zahid40" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" ><h2>On Github</h2></a>
-        <span>Copyright&copy;2023| ThisisZahid | All rights reserved</span>
+        <a href="https://www.instagram.com/its_zahid83/" target="_blank"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png?20210403190622"
+                alt="">
+            <h2>On Insta its_zahid83</h2>
+        </a>
+        <a class="git" href="https://github.com/Zahid40" target="_blank"><img
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+            <h2>On Github</h2>
+        </a>
+        <span>Copyright&copy;2023| thisisZahid | All rights reserved</span>
     </footer>
 
     <script>
