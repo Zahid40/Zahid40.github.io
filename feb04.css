@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    /* border: 2px red solid; */
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer #imgfooter {
+    height: 45vh;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+}
+.minimalart {
+    scale: 1.7;
+    position: absolute;
+    bottom: 80px;
+    left: 30px;
+    transform: skew(344deg);
+}
+.minimal{
+    background-color: #f9cb13;
+    height: 6vh;
+    width: 14vw;
+    position: relative;
+    border-radius: 49%;
+    transform: rotate(-25deg);
+    box-shadow: 0px 0px 5px 0px #f9cb13;
+}
+#minimal1 {
+    bottom: 0;
+}
+#minimal2 {
+    bottom: 10px;
+}
+#minimal3 {
+    bottom: 20px;
+}
+
+footer #cc {
+    position: absolute;
+    bottom: 0;
+    font-size: .8rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    text-align: center;
+    padding: 2px;
+    box-shadow: 0px -2px 100px 10px rgba(72, 163, 186, 0.637);
+}
+
+.footericon {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(167, 165, 165);
+    margin: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconspan {
+    padding: 9px;
+}
+.icon:hover{
+    color:rgb(72, 163, 186) ;
+    font-weight: 900;
+    outline: none;
+}
+.icon:focus{
+    outline: none;
+}
+.icon img {
+    height: 50px;
+    filter: invert();
+}
+.icon img:hover {
+    filter: invert() drop-shadow(0px 0px 10px rgb(72, 163, 186));  
+}
+.icon img:active {
+    filter: invert() drop-shadow(0px 0px 10px rgb(72, 163, 186));  
+}
+.icon img:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 680px) {
+
+
+    header {
+        border: 2px black solid;
+        height: 100px;
+    }
+
+    /* footer  */
+    footer {
+        height: 30vh;
+    }
+
+    footer #imgfooter {
+        height: 30vh;
+    }
+    .minimalart {
+        bottom: 65px;
+    }
+    .minimal {
+        width: 25vw;
+        height: 5vh;
+    }
+
+    footer #cc {
+        font-size: .5rem;
+    }
+
+    .footericon {
+        flex-direction: column;
+    }
+    .iconspan {
+        display: none;
+    }
+
+
+    .icon img {
+        height: 30px;
+    }
+}
