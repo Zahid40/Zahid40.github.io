@@ -184,7 +184,8 @@ footer #cc {
     header {
         height: 13vh;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
+        /* align-items: center; */
     }
     .cloud {
         width: 20vw;
@@ -201,16 +202,21 @@ footer #cc {
     }
 
     .hamburger-lines {
-        background-color: red;
-        position: absolute;
-        top: 20px;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .line {
         display: flex;
-        height: 10px;
-        width: 30px;
+        height: .3rem;
+        width: 3rem;
         background-color: white;
+        border-radius: 2rem;
+        margin: .35rem;
+    }
+    .hamburger-lines:hover #line2 {
+        display: none;
     }
       
 
