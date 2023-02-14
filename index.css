@@ -10,10 +10,12 @@
     transition: .5s;
 }
 header {
+    position:sticky;
+    top: 0px;
     display: flex;
     background-color: black;
     width: 100%;
-    height: 20vh;
+    height: 8rem;
 }
 .bgcloud {
     opacity: 1;
@@ -46,7 +48,7 @@ header {
     scale: 1.2;
 }
 #logobg {
-    height: 13vh;
+    height: 5rem;
     margin: 1.5rem 1.5rem 2rem 1rem ;
 }
 
@@ -68,58 +70,40 @@ nav ul .navi {
     margin: .1rem 1rem .1rem 1rem;
     border-bottom:2px solid rgb(0, 0, 0) ;
 }
-nav ul  a:hover .navi  {
+nav ul  a:hover .navi , nav ul  a:active .navi , nav ul  a:focus .navi  {
     color: rgb(255, 0, 0);
     font-weight: 900;
 }
-nav ul .navi:hover {
+nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     border-bottom:2px solid rgb(255, 0, 0) ;
 }
 
 
 footer {
     width: 100%;
-    height: 50vh;
+    height: 20rem;
     /* border: 2px red solid; */
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    position: absolute;
+    position:relative;
     bottom: 0;
     display: flex;
     justify-content: flex-end;
+    overflow:hidden;
 }
 
 footer #imgfooter {
-    height: 45vh;
+    height: 20rem;
     position: absolute;
     bottom: 0px;
     left: 0;
     filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
 }
-.minimalart {
-    scale: 1.7;
-    position: absolute;
-    bottom: 80px;
-    left: 30px;
-    transform: skew(344deg);
-}
-.minimal{
-    background-color: #f9cb13;
-    height: 6vh;
-    width: 14vw;
+.photobg{
     position: relative;
-    border-radius: 49%;
-    transform: rotate(-25deg);
-    box-shadow: 0px 0px 5px 0px #f9cb13;
-}
-#minimal1 {
-    bottom: 0;
-}
-#minimal2 {
-    bottom: 10px;
-}
-#minimal3 {
-    bottom: 20px;
+    right: 573px;
+    top: 4rem;
+    scale: 1.6;
 }
 
 footer #cc {
@@ -178,78 +162,3 @@ footer #cc {
     outline: none;
 }
 
-@media screen and (max-width: 680px) {
-
-
-    header {
-        height: 13vh;
-        display: flex;
-        /* justify-content: center; */
-        /* align-items: center; */
-    }
-    .cloud {
-        width: 20vw;
-    }
-    #cloud2 {
-        right: 5vw;
-    }
-    #logobg {
-        display: none;
-    }
-    
-    nav {
-        display: none;
-    }
-
-    .hamburger-lines {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .line {
-        display: flex;
-        height: .3rem;
-        width: 3rem;
-        background-color: white;
-        border-radius: 2rem;
-        margin: .35rem;
-    }
-    .hamburger-lines:hover #line2 {
-        display: none;
-    }
-      
-
-
-    /* footer  */
-    footer {
-        height: 30vh;
-    }
-
-    footer #imgfooter {
-        height: 30vh;
-    }
-    .minimalart {
-        bottom: 60px;
-    }
-    .minimal {
-        width: 25vw;
-        height: 4.7vh;
-    }
-
-    footer #cc {
-        font-size: .5rem;
-    }
-
-    .footericon {
-        flex-direction: column;
-    }
-    .iconspan {
-        display: none;
-    }
-
-
-    .icon img {
-        height: 30px;
-    }
-}

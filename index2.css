@@ -1,0 +1,74 @@
+@media screen and (max-width: 680px) {
+    header {
+        height: 6rem;
+        display: flex;
+    }
+    .headerheight{
+        height: 20rem;
+    }
+    #logobg {
+        height: 4rem;
+        margin: 1rem;
+    }
+    .bgcloud{
+        opacity: 1;
+        display: none;
+    }
+    .cloud {
+        width: 20vw;
+    }
+    #cloud2 {
+        right: 5vw;
+    }
+    nav {
+        display: none;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .navvisible{
+        display: flex;
+        margin: 50px;
+    }
+
+    .burger {
+        position: absolute;
+        top: 32px;
+        right: 23px;
+    }
+    .line {
+        width: 33px;
+        background-color: rgb(255, 255, 255);
+        height: 2px;
+        margin: 6px;
+        border-radius: 50px;
+    }
+    /* footer  */
+    footer {
+        height: 15rem;
+    }
+
+    footer #imgfooter {
+        height: 15rem;
+    }
+    .photobg{
+        right: 119px;
+        top: 3rem;
+    }
+
+    footer #cc {
+        font-size: .5rem;
+    }
+
+    .footericon {
+        flex-direction: column;
+    }
+    .iconspan {
+        display: none;
+    }
+
+
+    .icon img {
+        height: 30px;
+    }
+}
