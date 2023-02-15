@@ -9,9 +9,13 @@
     font-family: 'DM Sans', sans-serif;
     transition: .5s;
 }
+*::-webkit-scrollbar {
+    display: none;
+  }
 header {
     position:sticky;
     top: 0px;
+    z-index: 3;
     display: flex;
     background-color: black;
     width: 100%;
@@ -76,6 +80,74 @@ nav ul  a:hover .navi , nav ul  a:active .navi , nav ul  a:focus .navi  {
 }
 nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     border-bottom:2px solid rgb(255, 0, 0) ;
+}
+
+.content-main {
+    background: url(/frame\ parrtenbg.svg);
+    backdrop-filter: blur(5px);
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-direction: row;
+    align-items: center;
+
+}
+.content-main::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 470px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: unwrap;
+    flex-direction: row;
+    backdrop-filter: blur(3px);
+    z-index: -1;
+}
+.content-main::-webkit-scrollbar {
+    display: none;
+  }
+.frame {
+    height: 55%;
+    min-width: 200px;
+    margin: 10px;
+    background-color: rgba(1, 73, 102, 0.911);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.637);
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.linkbtn {
+    text-decoration: none;
+    color: rgb(255, 72, 0);
+    text-align: center;
+    height: auto;
+    width:50%;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    outline: transparent;
+    transition:  all .5s ;
+}
+.linkbtn:hover , .linkbtn:active{
+    color: rgb(61, 214, 0);
+}
+.btttnnn {
+    
 }
 
 
