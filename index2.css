@@ -43,12 +43,16 @@
         margin: 6px;
         border-radius: 50px;
     }
+    /* intro  */
+    .intro-main {
+        height: 600px;
+    }
+    .intro-main h2{
+        top: 420px;
+        left: 10px;
+    }
     /* footer  */
     footer {
-        height: 15rem;
-    }
-
-    footer #imgfooter {
         height: 15rem;
     }
     .photobg{
