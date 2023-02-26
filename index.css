@@ -28,6 +28,8 @@ header {
     background-color: black;
     width: 100%;
     height: 7rem;
+    background: linear-gradient(90deg,black,black);
+
 }
 .bgcloud {
     opacity: 1;
@@ -134,7 +136,8 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: 500px;
     width: 98%;
     border-radius: 1rem;
@@ -153,13 +156,35 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     border-radius: 1rem;
     margin-top: 35px;
 }
+.projectslide{
+    /* background-color: rgb(255, 255, 255); */
+    width: 88%;
+    height: max-content;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.slid{
+    backdrop-filter: blur(4px);
+    background-color: rgba(163, 79, 0, 0.219);
+    color: white;
+    border-radius: 1rem;
+    min-height: 250px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* skills  */
 .skills{
     display: flex;
-    justify-content: center;
-    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
     width: 98%;
     color: white;
     border-radius: 1rem;
@@ -168,6 +193,27 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
 }
 .skills .projectname {
     background-color: #001620;
+}
+.skills::before{
+    content: "";
+    height: 400px;
+    width: 98%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+    position: absolute;
+}
+.skillbox{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 98%;
+}
+.markingskill{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.skillbox input {
+    width: 40%;
 }
 
 
@@ -208,9 +254,24 @@ footer hr {
     width: 60%;
     align-self: center;
 }
+
 footer .information{
+    padding-left: 40px;
+    padding-right: 40px;
     height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    place-items: center;
 }
+.information a {
+    color: rgb(121, 121, 121);
+    text-decoration: none;
+    border-bottom: 1px rgb(121, 121, 121) solid;
+}
+
+
+
 footer .credit1 {
     text-align: center;
     color: rgb(201, 201, 201);

@@ -5,6 +5,9 @@
     }
     .headerheight{
         height: 20rem;
+        background-color: rgba(0, 0, 0, 0.76);
+        background: linear-gradient(90deg,black,black, rgba(253, 253, 253, 0));
+        border-bottom-right-radius: 10rem;
     }
     #logobg {
         height: 4rem;
@@ -51,6 +54,10 @@
     /* Styling the three lines to make it an X */
     .burger.close .line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
+        background-color: red;
+        box-shadow: 0px 0px 10px 10px black;
+
+
     }
 
     .burger.close .line:nth-child(2) {
@@ -59,6 +66,10 @@
 
     .burger.close .line:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
+        background-color: red;
+        box-shadow: 0px 0px 20px 4px black;
+
+
     }
 
     /* intro  */
@@ -68,6 +79,11 @@
     .intro-main h2{
         top: 420px;
         left: 10px;
+    }
+
+    /* skill */
+    .skillbox input {
+        width: 70%;
     }
     /* footer  */
     footer {
