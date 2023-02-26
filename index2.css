@@ -43,6 +43,24 @@
         margin: 6px;
         border-radius: 50px;
     }
+     /* Adding transform to the X */
+    .burger.close {
+        transform: rotate(180deg);
+    }
+
+    /* Styling the three lines to make it an X */
+    .burger.close .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger.close .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.close .line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
     /* intro  */
     .intro-main {
         height: 600px;
@@ -53,26 +71,21 @@
     }
     /* footer  */
     footer {
-        height: 15rem;
-    }
-    .photobg{
-        right: 119px;
-        top: 3rem;
+        height: 500px;
     }
 
-    footer #cc {
-        font-size: .5rem;
+    footer .credit1 {
+        font-size: .6rem;
     }
 
     .footericon {
-        flex-direction: column;
+        flex-direction: row;
     }
     .iconspan {
         display: none;
     }
-
-
     .icon img {
-        height: 30px;
+        height: 35px;
+        margin: .2rem 10px;
     }
 }
