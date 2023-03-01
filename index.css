@@ -29,7 +29,8 @@ header {
     background-color: black;
     width: 100%;
     height: 7rem;
-    background: linear-gradient(90deg,black,black);
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9));
+    backdrop-filter: blur(5px);
 
 }
 .bgcloud {
@@ -159,24 +160,50 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
 }
 .projectslide{
     /* background-color: rgb(255, 255, 255); */
-    width: 88%;
+    width: 98%;
     height: max-content;
     padding: 20px;
     margin: 10px;
     border-radius: 1rem;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: start;
+    overflow: scroll;
 }
 .slid{
     backdrop-filter: blur(4px);
     background-color: rgba(163, 79, 0, 0.219);
     color: white;
     border-radius: 1rem;
-    min-height: 250px;
-    width: 200px;
+    min-height: 350px;
+    min-width: 200px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+}
+.samplepro{
+    background-image: url(/tictactoess.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 210px;
+    width: 170px;
+    border-radius: 20px;
+    
+}
+.pro2{
+    background-image: url(/foodieweb.png);
+
+}
+.slid a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(8, 8, 94);
+    padding: 10px 70px;
+    border-radius: 10px;
+    margin-top: 40px;
 }
 
 
@@ -269,6 +296,10 @@ footer .information{
     color: rgb(121, 121, 121);
     text-decoration: none;
     border-bottom: 1px rgb(121, 121, 121) solid;
+}
+.information a:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 1px rgb(255, 255, 255) solid;
 }
 
 

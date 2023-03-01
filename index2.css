@@ -6,7 +6,7 @@
     .headerheight{
         height: 20rem;
         background-color: rgba(0, 0, 0, 0.76);
-        background: linear-gradient(90deg,black,black, rgba(253, 253, 253, 0));
+        background: linear-gradient(90deg,rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9), rgba(253, 253, 253, 0));
         border-bottom-right-radius: 10rem;
     }
     #logobg {
