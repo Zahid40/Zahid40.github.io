@@ -134,13 +134,13 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
 /* project name  */
 .project{
     background-image: url(/projectsbg.svg);
-    /* background-repeat: no-repeat; */
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    height: max-content;
     width: 98%;
     border-radius: 1rem;
     border: .5px solid rgba(255, 0, 0, 0.377);
@@ -152,7 +152,7 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    min-width: 80%;
     height: 50px;
     color: white;
     border-radius: 1rem;
@@ -165,18 +165,20 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     padding: 20px;
     margin: 10px;
     border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    overflow: scroll;
+    overflow:hidden;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 .slid{
     backdrop-filter: blur(4px);
-    background-color: rgba(163, 79, 0, 0.219);
+    background-color: rgba(88, 25, 0, 0.712);
     color: white;
     border-radius: 1rem;
     min-height: 325px;
     min-width: 200px;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,7 +202,8 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
 .slid a{
     text-decoration: none;
     color: white;
-    background-color: rgb(8, 8, 94);
+    background-color:#000000;
+    border: 1px solid white;
     padding: 10px 70px;
     border-radius: 10px;
     margin-top: 40px;
@@ -213,61 +216,40 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 500px;
+    height: 100px;
     width: 98%;
     color: white;
-    border-radius: 1rem;
+    border-radius:1rem;
     margin: 10px;
     background-color: #002c41;
 }
-.skills .projectname {
+.skills .projectname2 {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 90%;
+    color: rgb(190, 190, 190);
+    font-size: 1.2rem;
+}
+.skills a{
+    backdrop-filter: blur(4px);
     background-color: #001620;
-}
-.skills::before{
-    content: "";
-    height: 400px;
-    width: 98%;
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 1;
-    position: absolute;
-}
-.skillbox{
+    border: solid 1px rgba(0, 0, 0, 0);
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    width: 98%;
+    width: 90%;
+    height: 50px;
+    color: white;
+    border-radius: 1rem;
 }
-.markingskill{
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 90px;
+.skills a:hover{
+    border: solid 1px rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.411);
 }
-.skillbox input {
-    width: 40%;
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    height: 2px; /* Specified height */
-    border-radius: 5px;
-    background: #005b80; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-}
-.skillbox input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    transform: rotate(45deg);
-    border-top-left-radius: 100%; 
-    border-bottom-left-radius: 100%; 
-    border-bottom-right-radius: 100%; 
-    background: #00cfbe;
-    cursor: pointer;
-  }
+
+
 
 
 footer {

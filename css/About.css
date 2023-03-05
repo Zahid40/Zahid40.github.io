@@ -1,0 +1,68 @@
+/* skills  */
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+    width: 98%;
+    color: white;
+    border-radius: 1rem;
+    margin: 10px;
+    background-color: #002c41;
+}
+.skills .projectname {
+    background-color: #001620;
+}
+.skills::before{
+    content: "";
+    height: 500px;
+    width: 98%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+    position: absolute;
+}
+.skillbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 98%;
+}
+.markingskill{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90px;
+}
+.skillbox input {
+    width: 40%;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    height: 2px; /* Specified height */
+    border-radius: 5px;
+    background: #005b80; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+.skillbox input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    border-top-left-radius: 100%; 
+    border-bottom-left-radius: 100%; 
+    border-bottom-right-radius: 100%; 
+    background: #00cfbe;
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 680px){
+    /* skill */
+    .skillbox input {
+        width: 70%;
+    }
+}

@@ -85,6 +85,12 @@
     .skillbox input {
         width: 70%;
     }
+
+    /* projects */
+    .projectslide{
+        grid-template-columns: 1fr 1fr;
+    }
+
     /* footer  */
     footer {
         height: 500px;
