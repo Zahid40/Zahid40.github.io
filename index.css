@@ -175,7 +175,7 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     background-color: rgba(163, 79, 0, 0.219);
     color: white;
     border-radius: 1rem;
-    min-height: 350px;
+    min-height: 325px;
     min-width: 200px;
     display: flex;
     flex-direction: column;
@@ -212,6 +212,7 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     height: 500px;
     width: 98%;
     color: white;
@@ -233,16 +234,40 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
 .skillbox{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     width: 98%;
 }
 .markingskill{
+    text-align: center;
     padding-left: 10px;
     padding-right: 10px;
+    width: 90px;
 }
 .skillbox input {
     width: 40%;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    height: 2px; /* Specified height */
+    border-radius: 5px;
+    background: #005b80; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
 }
+.skillbox input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    border-top-left-radius: 100%; 
+    border-bottom-left-radius: 100%; 
+    border-bottom-right-radius: 100%; 
+    background: #00cfbe;
+    cursor: pointer;
+  }
 
 
 footer {
