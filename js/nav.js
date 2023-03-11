@@ -5,21 +5,21 @@
      <div class="line"></div>
  </div> 
  <nav>
-     <ul>
-                    <a href="/index.html#introididid">
-                    <li class="navi" id="item1">Home</li>
+            <ul>
+                <a href="/index.html#introididid">
+                    <li class="navi" id="item1"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Home </li>
                 </a>
                 <a href="/view-pages/About.html">
-                    <li class="navi" id="item3">About Me</li>
+                    <li class="navi" id="item3"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;About Me</li>
                 </a>
                 <a href="#mpypupypy">
-                    <li class="navi" id="item2">My Projects</li>
+                    <li class="navi" id="item2"><i class="fa fa-file-code-o"></i>&nbsp;&nbsp;&nbsp;My Projects</li>
                 </a>
                 <a href="#fooottteeercontact">
-                    <li class="navi" id="item4">Contact</li>
+                    <li class="navi" id="item4"><i class="fa fa-paperclip"></i>&nbsp;&nbsp;&nbsp;Contact</li>
                 </a>
             </ul>
- </nav>
+    </nav>
  <div class="bgcloud">
      <img class="cloud" id="cloud1" src="/images and logos/cloudbg.png" alt="">
      <img class="cloud" id="cloud2" src="/images and logos/cloudbg.png" alt="">

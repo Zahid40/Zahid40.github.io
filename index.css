@@ -173,40 +173,61 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
 }
 .slid{
     backdrop-filter: blur(4px);
-    background-color: rgba(88, 25, 0, 0.712);
+    
+    background: linear-gradient(180deg ,#1f1f1f46, #1f1f1f46);
+    box-shadow: 0px 0px 100px 10px rgba(0, 0, 0, 0.733);
     color: white;
     border-radius: 1rem;
-    min-height: 325px;
+    min-height: 250px;
     min-width: 200px;
     max-width: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
     margin: 10px;
 }
+.slid:hover{
+    background: linear-gradient(210deg ,#1f1f1f46, rgb(109, 1, 1));
+}
 .samplepro{
-    background-image: url(/tictactoess.png);
+    background-image: url(/images\ and\ logos/Game-logo.svg);
     background-position: center;
-    background-size:cover;
+    background-size:contain;
     background-repeat: no-repeat;
-    height: 210px;
-    width: 170px;
+    filter: invert();
+    height: 120px;
+    width:110px;
     border-radius: 20px;
     
 }
 .pro2{
-    background-image: url(/foodieweb.png);
+    background-image: url(/images\ and\ logos/website-design-logo.svg);
 
 }
 .slid a{
     text-decoration: none;
     color: white;
+    font-weight: 900;
     background-color:#000000;
     border: 1px solid white;
     padding: 10px 70px;
     border-radius: 10px;
     margin-top: 40px;
+}
+.slid a:hover{
+    background-color: white;
+    color: black;
+    font-weight: 900;
+
+}
+.slid a:active{
+    background-color: white;
+    color: black;
+}
+.slid a:checked{
+    background-color: white;
+    color: black;
 }
 
 

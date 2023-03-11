@@ -1,3 +1,48 @@
+/* self  */
+.self{
+    background: url(/images\ and\ logos/aboutmebg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:local;    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    width: 98%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1rem;
+}
+.pitcher{
+    display: flex;
+    background-color: #001620;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.about-self{
+    display: flex;
+    background-color: red;
+    height: 300px;
+    width: 50%;
+    border-radius: 2rem;
+    position: relative;
+    top: 200px;
+    left: 20px;
+}
+.about-self2{
+    display: flex;
+    background-color: green;
+    height: 300px;
+    width: 100px;
+    border-radius: 2rem;
+    position: relative;
+    top: 370px;
+    left: 40px;
+}
+
+
 /* skills  */
 .skills{
     display: flex;
