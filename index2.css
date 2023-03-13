@@ -90,10 +90,27 @@
     .projectslide{
         grid-template-columns: 1fr 1fr;
     }
+    .samplepro{
+        height: 80px;
+        width:60px;
+    }
+    .slid{
+        padding: 10px;
+    }
+    .slid a{
+        margin-top: 30px;
+        padding: 10px 40px;
+        border: 1px solid white;
+        font-size: .8rem;
+    }
 
     /* footer  */
     footer {
         height: 500px;
+    }
+    footer .information{
+    grid-template-columns: 1fr 1fr;
+
     }
 
     footer .credit1 {
