@@ -12,7 +12,7 @@
                 <a href="/view-pages/About.html">
                     <li class="navi" id="item3"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;About Me</li>
                 </a>
-                <a href="#mpypupypy">
+                <a href="/index.html#mpypupypy">
                     <li class="navi" id="item2"><i class="fa fa-file-code-o"></i>&nbsp;&nbsp;&nbsp;My Projects</li>
                 </a>
                 <a href="#fooottteeercontact">
