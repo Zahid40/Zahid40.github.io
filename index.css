@@ -33,7 +33,7 @@ header {
     backdrop-filter: blur(5px);
 
 }
-.bgcloud {
+/* .bgcloud {
     opacity: 1;
 }
 .cloud {
@@ -62,7 +62,7 @@ header {
     right:12vw ;
     top: 1vh;
     scale: 1.2;
-}
+} */
 #logobg {
     height: 5rem;
     margin: 1.5rem 1.5rem 2rem 1rem ;
@@ -162,7 +162,7 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     /* background-color: rgb(255, 255, 255); */
     width: 98%;
     height: max-content;
-    padding: 20px;
+    padding: 5px;
     margin: 10px;
     border-radius: 1rem;
     overflow:hidden;
@@ -183,7 +183,8 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     padding: 15px;
 }
 .slid:hover{
@@ -205,6 +206,9 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
 .pro2{
     background-image: url(/images\ and\ logos/website-design-logo.svg);
 
+}
+.pro3{
+    background-image: url(https://img.icons8.com/?size=512&id=vMkgItIdhG6L&format=png);
 }
 .slid a{
     text-decoration: none;
