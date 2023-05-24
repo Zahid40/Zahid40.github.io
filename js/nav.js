@@ -1,4 +1,4 @@
- var myHtmlCode = `<img id="logobg" src="/images and logos/logobg1.jpeg" alt="">
+ var myHtmlCode = `<img id="logobg" src="/images and logos/logo3.png" alt="">
  <div class="burger">
      <div class="line"></div>
      <div class="line"></div>
