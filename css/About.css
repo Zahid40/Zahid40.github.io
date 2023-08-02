@@ -119,7 +119,7 @@
 
 
 /* skills  */
-.skills{
+.skills2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,7 +131,7 @@
     margin: 10px;
     background-color: #002c41;
 }
-.skills .projectname {
+.skills2 .projectname {
     background-color: #001620;
 }
 .skills::before{

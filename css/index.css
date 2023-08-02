@@ -33,36 +33,7 @@ header {
     backdrop-filter: blur(5px);
 
 }
-/* .bgcloud {
-    opacity: 1;
-}
-.cloud {
-    width: 10vw;
-    position: absolute;
-    animation: glowcloud 1.5s infinite alternate ease-in-out .1s  ;
-}
-@keyframes glowcloud {
-    0% {
-        filter: saturate(0) drop-shadow(0px 0px 10px black) ;
-    }
-    100% {
-        filter: saturate(8) drop-shadow(0px 0px 40px rgb(0, 255, 242));
-    }
-}
-#cloud1 {
-    right:0 ;
-}
-#cloud2 {
-    right:4vw ;
-    top: 3vh;
-    scale: 1.5;
-    z-index: 1;
-}
-#cloud3 {
-    right:12vw ;
-    top: 1vh;
-    scale: 1.2;
-} */
+
 #logobg {
     height: 5rem;
     margin: 1.5rem 1.5rem 2rem 1rem ;
@@ -102,7 +73,7 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
 }
 .intro-main {
     background-color: rgb(15, 15, 15);
-    background-image: linear-gradient(90deg,black, rgba(253, 253, 253, 0)) , url(/intro-main-bg.svg);
+    background-image: linear-gradient(90deg,black, rgba(253, 253, 253, 0)) , url(/images\ and\ logos/intro-main-bg.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -133,7 +104,7 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
 
 /* project name  */
 .project{
-    background-image: url(/projectsbg.svg);
+    background-image: url(/images\ and\ logos/projectsbg.svg);
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -166,10 +137,20 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     margin: 10px;
     border-radius: 1rem;
     overflow:hidden;
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+}
+.projectslide ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.projectslide ol li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .slid{
     backdrop-filter: blur(4px);
@@ -178,52 +159,39 @@ nav ul .navi:hover , nav ul .navi:active , nav ul .navi:focus {
     color: white;
     border-radius: 1rem;
     min-height: auto;
-    width: auto;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    justify-content:center;
+    align-items: end;
+    margin: 10px;
     padding: 15px;
 }
 .slid:hover{
     scale: 1.1;
     z-index: 2;
     background: linear-gradient(210deg ,#1f1f1f46, rgb(109, 1, 1));
+    background-color: rgb(79, 23, 247);
 }
-.samplepro{
-    background-image: url(/images\ and\ logos/Game-logo.svg);
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    filter: invert();
-    height: 120px;
-    width:110px;
-    border-radius: 20px;
-    
+.slid:hover a{
+    background-color: white;
+    color: black;
+    font-weight: 900;
 }
-.pro2{
-    background-image: url(/images\ and\ logos/website-design-logo.svg);
 
-}
-.pro3{
-    background-image: url(https://img.icons8.com/?size=512&id=vMkgItIdhG6L&format=png);
-}
+
 .slid a{
     text-decoration: none;
     color: white;
     font-weight: 900;
     background-color:#000000;
     border: 1px solid white;
-    padding: 10px 50px;
+    /* padding: 10px 50px; */
     border-radius: 10px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 .slid a:hover{
-    background-color: white;
-    color: black;
-    font-weight: 900;
+    
 
 }
 .slid a:active{
@@ -282,7 +250,7 @@ footer {
     width: 99%;
     height: 500px;
     /* border: 1px rgb(0, 255, 21) solid; */
-    background: linear-gradient(180deg,black,rgba(0, 0, 0, 0.623), rgba(253, 253, 253, 0)) , url(/footerbg.svg);
+    background: linear-gradient(180deg,black,rgba(0, 0, 0, 0.623), rgba(253, 253, 253, 0)) , url(/images\ and\ logos/footerbg.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -387,4 +355,3 @@ footer .credit1 {
 .icon img:focus {
     outline: none;
 }
-

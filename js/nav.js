@@ -19,12 +19,7 @@
                     <li class="navi" id="item4"><i class="fa fa-paperclip"></i>&nbsp;&nbsp;&nbsp;Contact</li>
                 </a>
             </ul>
-    </nav>
- <div class="bgcloud">
-     <img class="cloud" id="cloud1" src="/images and logos/cloudbg.png" alt="">
-     <img class="cloud" id="cloud2" src="/images and logos/cloudbg.png" alt="">
-     <img class="cloud" id="cloud3" src="/images and logos/cloudbg.png" alt="">
- </div>`;
+    </nav>`;
 
  var myfootercode = `<div class="footericonnameimage">
 
