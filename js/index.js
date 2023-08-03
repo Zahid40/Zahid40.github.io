@@ -23,3 +23,27 @@ function toggleMenu() {
     }
 }
 
+//hireme button
+    document.getElementById("hiremebtn").addEventListener("click", function() {
+    let recipient = "zahidanasari17@gmail.com";
+    var subject = encodeURIComponent("Hiring for work!");
+    var body = encodeURIComponent(
+    "Dear [Candidate's Name],\n\n" +
+    "We're reaching out to you because we're impressed by your skills. We have an exciting opportunity at [Company Name] that we believe you'd be a great fit for our work.\n\n" +
+    "Location: [Office Location or Remote]\n" +
+    "Skills: [Key Skills/Technologies]\n\n" +
+    "If you're interested in learning more, please reply to this email. We'd love to discuss how your expertise could contribute to our success.\n\n" +
+    "Looking forward to connecting,\n\n" +
+    "[Your Name]\n" +
+    "[Your Title]\n" +
+    "[Company Name]\n" +
+    "[Email Address]\n" +
+    "[Phone Number]"
+    );
+
+    var mailtoLink = "mailto:" + recipient + "?subject=" + subject + "&body=" + body;
+
+    window.location.href = mailtoLink;
+  });
+
+
