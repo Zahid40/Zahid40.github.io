@@ -134,7 +134,7 @@
 .skills2 .projectname {
     background-color: #001620;
 }
-.skills::before{
+.skills2::before{
     content: "";
     height: 500px;
     width: 98%;
