@@ -5,104 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
-    <link rel="stylesheet" href="./css/index.css" class="css">
-    <link rel="stylesheet" href="./css/index2.css">
-    <link rel="stylesheet" href="/css/About.css">
     <title>thisisZahid</title>
-    <link rel="icon" type="jpg" href="/images and logos/logobg1.jpg">
-
-    <script src="https://kit.fontawesome.com/d304302302.js" crossorigin="anonymous"></script>
-
+    <link rel="icon" type="jpg" href="#">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,1,0" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-        <img id="logobg" src="/images and logos/logo3.png" alt="">
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <div id="hmdiv">
-            <button id="hiremebtn">Hire Me</button>
-        </div>
-        <nav>
-            <ul>
-                <a href="/index.html#introididid">
-                    <li class="navi" id="item1"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Home </li>
-                </a>
-                <a href="/view-pages/About.html">
-                    <li class="navi" id="item3"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;About Me</li>
-                </a>
-                <a href="#mpypupypy">
-                    <li class="navi" id="item2"><i class="fa fa-file-code-o"></i>&nbsp;&nbsp;&nbsp;My Projects</li>
-                </a>
-                <a href="#fooottteeercontact">
-                    <li class="navi" id="item4"><i class="fa fa-paperclip"></i>&nbsp;&nbsp;&nbsp;Contact</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-    <section id="introididid" class="intro">
-        <div class="intro-main">
-            <h2>Hi, I am <span>Zahid</span></h2>
-        </div>
-    </section>
+<body class="bg-[var(--black2)] text-[var(--white)] ">
+    <div class="max-w-6xl flex items-center flex-col">
 
-    <section id="skilllllooooopp" class="skills">
-        <a href="/view-pages/About.html">
-            <div class="projectname2">
-                View Profile
+        <nav class="grid grid-cols-7 gap-2  place-items-center bg-[var(--white)] text-[var(--black2)] w-full">
+            <div
+                class="bg-[url('./images/logo3.png')] invert bg-contain bg-center bg-no-repeat h-16 w-full md:w-16 m-4 col-span-1">
             </div>
-            <i class="fa fa-arrow-right"></i>
-        </a>
-    </section>
+
+            <div class="col-span-2"></div>
+
+            <div class="col-span-1">
+                <p class="text-center font-bold"><span class="material-symbols-outlined">
+                        science
+                    </span><span class="text-xs block">Projects</span>
+                </p>
+            </div>
+            <div class="col-span-1">
+                <p class="text-center font-bold"><span class="material-symbols-outlined">
+                        contact_page
+                    </span> <span class="text-xs block">Contact</span> </p>
+            </div>
+            <div class="col-span-2 w-5/6">
+                <button
+                    class="p-3 rounded-full font-bold text-1xl w-full bg-[var(--black2)] text-[var(--white)] hover:bg-red-700 hover:text-[var(--white)] shadow-sm shadow-violet-600 hover:shadow-md hover:shadow-red-600">Hire
+                    me</button>
+            </div>
+        </nav>
+
+        <!-- main  -->
+        <section class="flex flex-col items-center justify-center">
+            <div
+                class=" bg-[var(--white)] h-full w-full rounded-b-full flex flex-col justify-end items-center overflow-hidden">
+                <div class=" bg-[url(./images/profile_img_3.png)] bg-cover h-96 w-80"></div>
+            </div>
+            <h1 class="text-7xl text-[var(--white)] text-center col-span-1 p-2" style="font-family: 'Anton', sans-serif;">Hi I'm Zahid
+            </h1>
+            <p
+                class="font-semibold  px-6 py-2 w-2/3 rounded-2xl text-center shadow-md">
+                Welcome to my digital playground. I'm Zahid, a passionate web developer with a flair for creating
+                stunning, user-friendly websites</p>
+        </section>
+
+        <!-- buttons  -->
+        <div class="w-full flex justify-center items-center p-8">
+            <button class="bg-gradient-to-r from-violet-600 to-blue-500 rounded-2xl px-4 py-2 flex justify-center items-center h-14 w-32 mx-4 shadow-[0_0px_50px_-5px_blue]">Hire Now</button>
+            <button class="bg-gradient-to-r from-red-600 to-orange-700 rounded-2xl px-4 py-2 flex justify-center items-center h-14 w-32 mx-4 shadow-[0_0px_50px_-5px_red]"><span class="material-symbols-outlined">
+                download
+                </span> CV</button>
+        </div>
+
+        <!-- profile -->
+        <section class="py-12 px-6">
+            <div class="border border-yellow-500 border-1 rounded-2xl p-12 flex flex-col items-center justify-start max-w-lg h-96 bg-[url('./images/bg1.jpg')] bg-cover bg-center  mb-12">
+                <h2 class="font-bold text-2xl text-center text-yellow-100 pb-4">Web Development</h2>
+                <p class="text-center text-sm h-full">I am a web developer proficient in HTML, CSS, and JavaScript, enhancing my projects with Bootstrap and Tailwind for sleek designs and interactivity. I also utilize React to create dynamic, user-friendly web applications, ensuring a well-rounded skill set for crafting modern websites.</p>
+                <div class="flex justify-between w-full h-10 self-end bg-yellow-400/30  h-24 rounded-full px-6 py-2">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png" alt="" class="h-10 w-10">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png" alt="" class="h-10 w-10">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="" class="h-10 w-10">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968672.png" alt="" class="h-10 w-10">
+                    <img src="https://cdn-icons-png.flaticon.com/128/919/919851.png" alt="" class="h-10 w-10">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968322.png" alt="" class="h-10 w-10">
+                </div>
+            </div>
+            <div class="border border-yellow-500 border-1 rounded-2xl p-12 flex flex-col items-center justify-start max-w-lg h-96 bg-[var(--black)] bg-[url('./images/bg2.jpg')] bg-cover bg-center">
+                <h2 class="font-bold text-2xl text-center text-yellow-100 pb-4">Designing</h2>
+                <p class="text-center text-sm h-full">In addition to my web development skills, I leverage Photoshop for poster design, graphic illustrations, and Blender for 3D design assets. This diverse toolset allows me to create visually captivating websites, posters, and digital assets for a wide range of creative projects.</p>
+                <div class="flex justify-start w-full h-10 self-end bg-yellow-400/20  h-24 rounded-full px-6 py-2">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968520.png" alt="" class="h-10 w-10 ml-1 ">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/512px-Blender_logo_no_text.svg.png" alt="" class="h-10 w-auto ml-1 ">
+                </div>
+            </div>
+        </section>
+
+        <!-- projects  -->
+        <section class="h-auto w-full p-4">
+            <h1 class="text-6xl text-center p-5 tracking-[1rem] font-bold text-sky-500">PROJECTS</h1>
+            <div class="outline outline-white outline-[1px] p-8 rounded-3xl grid grid-cols-2 gap-4" id="projects_collection">
+            </div>
+        </section>
 
 
-    <section id="mpypupypy" class="project">
-        <div class="projectname">
-            <h2>My Projects</h2>
-        </div>
-        <div class="projectslide">
-            <ol id="project_list_container"></ol>
-        </div>
-    </section>
+    </div>
 
-    <footer id="fooottteeercontact">
-        <div class="footericonnameimage">
-
-            <img id="logofooterimage" src="/images and logos/logobg1.jpg" alt="">
-            <span>Designer`s Freedom Let`s design</span>
-        </div>
-        <div class="information">
-            <a href="https://www.youtube.com/@CodeWithHarry">CodeWithHarry Yt</a>
-            <a href="https://stackoverflow.com/">stackoverflow</a>
-            <a href="https://www.geeksforgeeks.org/">geeksforgeeks</a>
-            <a href="https://www.w3schools.com/">w3school</a>
-            <a href="https://developer.mozilla.org/en-US/">mdn</a>
-            <a href="https://github.com/">github</a>
-            <a href="https://fffuel.co/">fffuel</a>
-            <a href="https://fontawesome.com/">fontawesome</a>
-        </div>
-        <!--Footer icon-->
-        <div class="footericon">
-            <a class="icon" target="_blank" href="https://github.com/Zahid40">
-                <i class="fa fa-github fa-2x"></i>
-                <span class="iconspan"></span>
-            </a>
-            <a class="icon" target="_blank" href="https://www.instagram.com/its_zahid83/">
-                <i class="fa fa-instagram fa-2x"></i>
-                <span class="iconspan"></span>
-            </a>
-        </div>
-        <hr>
-        <span class="credit1">Made by Zahid</span>
-        <span class="credit1">Hosting with Github</span>
-
-        <!--cc-->
-        <span class="credit1">Copyright&copy | thisisZahid | All Rights reserved</span>
-    </footer>
-    <script src="/js/index.js"></script>
 </body>
+<script src="./script.js"></script>
 
 </html>

@@ -1,0 +1,13 @@
+:root{
+    --black : #1d1d1d;
+    --black2 : #1B191A;
+    --white : #FAF8FB;
+}
+*{
+    /* font-family: 'DM Serif Display', serif; */
+font-family: 'Poppins', sans-serif;
+    transition: all .3s;
+}
+*::-webkit-scrollbar {
+    display: none;
+  }
