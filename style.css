@@ -1,13 +1,41 @@
-:root{
-    --black : #1d1d1d;
-    --black2 : #1B191A;
-    --white : #FAF8FB;
+:root {
+    --black: #121212;
+    --black2: #1B191A;
+    --white: #ffffff;
+    --blue: #4285F4;
+    --red: #DB4437;
+    --yellow: #F4B400;
+    --green: #0F9D58;
 }
-*{
-    /* font-family: 'DM Serif Display', serif; */
-font-family: 'Poppins', sans-serif;
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./resources/thunder/THUNDER/Fonts/Web-PS/Thunder-ExtraBoldLC.woff2') format('woff2')
+    /* Add more font sources for compatibility with different browsers */
+  }
+* {
+    font-family: 'Poppins', sans-serif;
     transition: all .3s;
 }
 *::-webkit-scrollbar {
     display: none;
+}
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.typed-cursor {
+    display: inline;
+    font-size: 25px;
+}
+/* styles.css (or your custom CSS file) */
+
+.custom-box-shadow {
+    box-shadow: 0px 0px 20px #050505;
   }
+.custom-box-shadow_2 {
+    box-shadow: 0px 0px 20px #cccccc;
+  }
+.custom-box-shadow_blue {
+    box-shadow: 0px 0px 20px #67baff;
+  }
+  
+  

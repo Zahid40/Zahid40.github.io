@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta name="theme-color" content="#4285F4" />
     <title>thisisZahid</title>
     <link rel="icon" type="jpg" href="./images/logobg1.jpg">
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,62 +20,68 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[var(--black2)] text-[var(--white)] ">
+<body class="bg-[var(--black2)] text-[var(--white)] flex items-center justify-center ">
     <div class="max-w-6xl flex items-center flex-col">
 
-        <nav class="grid grid-cols-7 gap-2  place-items-center bg-[var(--white)] text-[var(--black2)] w-full">
-            <div
-                class="bg-[url('./images/logo3.png')] invert bg-contain bg-center bg-no-repeat h-16 w-full md:w-16 m-4 col-span-1">
-            </div>
+        <nav class="grid grid-cols-7 gap-2  place-items-center bg-[var(--white)] text-[var(--black2)] w-full h-24">
+            <a href="#" class="py-2">
+                <div
+                    class="bg-[url('./images/logo3.png')] invert bg-contain bg-center bg-no-repeat h-16 w-16 md:w-16 col-span-1">
+                </div>
+            </a>
 
             <div class="col-span-2"></div>
 
             <div class="col-span-1">
-                <p class="text-center font-bold"><span class="material-symbols-outlined">
+                <a href="#projectdiv" class="text-center font-bold"><span class="material-symbols-outlined">
                         science
                     </span><span class="text-xs block">Projects</span>
-                </p>
+                </a>
             </div>
             <div class="col-span-1">
-                <p class="text-center font-bold"><span class="material-symbols-outlined">
+                <a href="#contact" class="text-center font-bold"><span class="material-symbols-outlined">
                         contact_page
-                    </span> <span class="text-xs block">Contact</span> </p>
+                    </span> <span class="text-xs block">Contact</span> </a>
             </div>
             <div class="col-span-2 w-5/6">
                 <button
-                    class="p-3 rounded-full font-bold text-1xl w-full bg-[var(--black2)] text-[var(--white)] hover:bg-red-700 hover:text-[var(--white)] shadow-sm shadow-violet-600 hover:shadow-md hover:shadow-red-600">Hire
+                    class="p-3 rounded-full font-bold text-1xl w-full bg-gradient-to-r from-violet-700 to-[var(--blue)] text-[var(--white)] hover:text-[var(--black)] shadow-[0_0px_20px_-5px_blue] " onclick="email_mail()">Hire
                     me</button>
             </div>
         </nav>
 
         <!-- main  -->
         <section class="flex flex-col items-center justify-center">
-            <div
+            <div 
                 class=" bg-[var(--white)] h-full w-full rounded-b-full flex flex-col justify-end items-center overflow-hidden">
                 <div class=" bg-[url(./images/profile_img_3.png)] bg-cover h-96 w-80"></div>
             </div>
-            <h1 class="text-7xl text-[var(--white)] text-center col-span-1 p-2" style="font-family: 'Anton', sans-serif;">Hi I'm Zahid
+            <h1 class="text-7xl font-bold text-gray-300 text-center col-span-1 p-2 tracking-tighter" >Hi I'm <span class="text-white font-black">Zahid</span>
             </h1>
+            <div class="flex">
+                <span></span>
+                <span id="element" class="inline text-[var(--yellow)]  text-2xl font-bold"></span>
+            </div>
             <p
-                class="font-semibold  px-6 py-2 w-2/3 rounded-2xl text-center shadow-md">
+                class="font-semibold  px-6 py-2 w-2/3 rounded-2xl text-center text-sm">
                 Welcome to my digital playground. I'm Zahid, a passionate web developer with a flair for creating
                 stunning, user-friendly websites</p>
         </section>
 
         <!-- buttons  -->
         <div class="w-full flex justify-center items-center p-8">
-            <button class="bg-gradient-to-r from-violet-600 to-blue-500 rounded-2xl px-4 py-2 flex justify-center items-center h-14 w-32 mx-4 shadow-[0_0px_50px_-5px_blue]">Hire Now</button>
-            <button class="bg-gradient-to-r from-red-600 to-orange-700 rounded-2xl px-4 py-2 flex justify-center items-center h-14 w-32 mx-4 shadow-[0_0px_50px_-5px_red]"><span class="material-symbols-outlined">
+            <button class="bg-gradient-to-r from-violet-700 to-[var(--blue)] hover:text-black   rounded-2xl px-4 py-2 flex justify-center items-center h-14 w-32 mx-4 shadow-[0_0px_50px_-5px_blue]" onclick="email_mail()">Hire Now</button>
+            <a href="./resources/Zahid_cv.pdf" download="Zahid's CV" class="bg-gradient-to-r from-[var(--red)] to-[var(--yellow)] hover:text-black rounded-2xl px-4 py-2 flex justify-center items-center h-14 w-32 mx-4 shadow-[0_0px_50px_-5px_var(--red)]"><span class="material-symbols-outlined" onclick = "downloadFile()">
                 download
-                </span> CV</button>
+                </span> CV</a>
         </div>
 
         <!-- profile -->
         <section class="py-12 px-6">
-            <div class="border border-yellow-500 border-1 rounded-2xl p-12 flex flex-col items-center justify-start max-w-lg h-96 bg-[url('./images/bg1.jpg')] bg-cover bg-center  mb-12">
-                <h2 class="font-bold text-2xl text-center text-yellow-100 pb-4">Web Development</h2>
-                <p class="text-center text-sm h-full">I am a web developer proficient in HTML, CSS, and JavaScript, enhancing my projects with Bootstrap and Tailwind for sleek designs and interactivity. I also utilize React to create dynamic, user-friendly web applications, ensuring a well-rounded skill set for crafting modern websites.</p>
-                <div class="flex justify-between w-full h-10 self-end bg-yellow-400/30  h-24 rounded-full px-6 py-2">
+            <div data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt-full-page-listening class=" custom-box-shadow rounded-2xl p-12 flex flex-col items-center justify-start max-w-lg min-h-96 h-auto bg-[url('./images/bg1.jpg')] bg-cover bg-center  mb-12" style="transform-style: preserve-3d; transform: perspective(1000px);">
+                <h2 class="font-bold text-2xl text-center text-yellow-100 pb-4" style="transform: translateZ(20px) ">Web Development</h2>
+                <p class="text-center text-sm h-full" style="transform: translateZ(20px) ">I am a web developer proficient in HTML, CSS, and JavaScript, enhancing my projects with Bootstrap and Tailwind for sleek designs and interactivity. I also utilize React to create dynamic, user-friendly web applications, ensuring a well-rounded skill set for crafting modern websites.</p>
+                <div class="flex justify-between flex-wrap w-full h-10 self-end  h-24 rounded-full px-6 py-2" style="transform: translateZ(20px) ">
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png" alt="" class="h-10 w-10">
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png" alt="" class="h-10 w-10">
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="" class="h-10 w-10">
@@ -82,10 +90,10 @@
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968322.png" alt="" class="h-10 w-10">
                 </div>
             </div>
-            <div class="border border-yellow-500 border-1 rounded-2xl p-12 flex flex-col items-center justify-start max-w-lg h-96 bg-[var(--black)] bg-[url('./images/bg2.jpg')] bg-cover bg-center">
-                <h2 class="font-bold text-2xl text-center text-yellow-100 pb-4">Designing</h2>
-                <p class="text-center text-sm h-full">In addition to my web development skills, I leverage Photoshop for poster design, graphic illustrations, and Blender for 3D design assets. This diverse toolset allows me to create visually captivating websites, posters, and digital assets for a wide range of creative projects.</p>
-                <div class="flex justify-start w-full h-10 self-end bg-yellow-400/20  h-24 rounded-full px-6 py-2">
+            <div data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt-full-page-listening class="custom-box-shadow rounded-2xl p-12 flex flex-col items-center justify-start max-w-lg min-h-96 h-auto bg-[var(--black)] bg-[url('./images/bg2.jpg')] bg-cover bg-center" style="transform-style: preserve-3d; transform: perspective(1000px);">
+                <h2 class="font-bold text-2xl text-center text-yellow-100 pb-4" style="transform: translateZ(20px) ">Designing</h2>
+                <p class="text-center text-sm h-full" style="transform: translateZ(20px) ">In addition to my web development skills, I leverage Photoshop for poster design, graphic illustrations, and Blender for 3D design assets. This diverse toolset allows me to create visually captivating websites, posters, and digital assets for a wide range of creative projects.</p>
+                <div class="flex justify-start w-full h-10 self-end h-24 rounded-full px-6 py-2" style="transform: translateZ(20px) ">
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968520.png" alt="" class="h-10 w-10 ml-1 ">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/512px-Blender_logo_no_text.svg.png" alt="" class="h-10 w-auto ml-1 ">
                 </div>
@@ -93,16 +101,56 @@
         </section>
 
         <!-- projects  -->
-        <section class="h-auto w-full p-4">
-            <h1 class="text-6xl text-center p-5 tracking-[1rem] font-bold text-sky-500">PROJECTS</h1>
-            <div class="outline outline-white outline-[1px] p-8 rounded-3xl grid grid-cols-2 gap-4" id="projects_collection">
+        <section id="projectdiv" class="h-auto w-full p-4">
+            <!-- <h1 class="text-6xl text-center p-5 tracking-[1rem] font-bold text-sky-500">PROJECTS</h1> -->
+            <div class="custom-box-shadow p-8 rounded-3xl grid grid-cols-2 gap-4" id="projects_collection">
             </div>
         </section>
+
+        <!-- footer  -->
+        <footer id="contact" class="h-96 w-full grid grid-cols-3 gap-2 p-4">
+            <div class="col-span-2 custom-box-shadow rounded-2xl p-2 flex flex-col items-center justify-around w-full">
+                <div class="flex items-start justify-start w-full ">
+                    <div class=" bg-cover bg-center aspect-square w-12" style="background-image: url('./images/logo3.png');"></div>
+                    <span class="text-sm">Designer's <br> Freedom</span>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 place-items-center gap-2 w-full px-3 text-xs">
+                    <a href="https://www.codewithharry.com/" class="text-gray-400 hover:text-white">CodeWithHarry</a>
+                    <a href="https://stackoverflow.com/" class="text-gray-400 hover:text-white">stackoverflow</a>
+                    <a href="https://www.geeksforgeeks.org/" class="text-gray-400 hover:text-white">geeksforgeeks</a>
+                    <a href="https://www.w3schools.com/" class="text-gray-400 hover:text-white">w3school</a>
+                    <a href="https://developer.mozilla.org/en-US/" class="text-gray-400 hover:text-white">mdn</a>
+                    <a href="https://github.com/" class="text-gray-400 hover:text-white">github</a>
+                    <a href="https://fffuel.co/" class="text-gray-400 hover:text-white">fffuel</a>
+                    <a href="https://fontawesome.com/" class="text-gray-400 hover:text-white">fontawesome</a>
+                </div>
+            </div>
+            <div class="col-span-1 custom-box-shadow rounded-2xl p-12 flex flex-col items-center justify-around space-y-2">
+                <button  class="bg-white text-black flex items-center p-2 rounded-2xl w-full block custom-box-shadow" onclick="email_mail()"><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="" class="h-10 w-10"><span class="text-center font-semibold w-full md:inline hidden">Email</span></button>
+                <a href="https://www.linkedin.com/in/zahid-ansari-53354926a" class="bg-white text-black flex items-center p-2 rounded-2xl w-full block text-center custom-box-shadow"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="" class="h-10 w-10"><span class="text-center font-semibold w-full md:inline hidden">Linkdin</span></a>
+                <a href="https://github.com/Zahid40" class="bg-white text-black flex items-center p-2 rounded-2xl w-full block text-center custom-box-shadow"><img src="https://cdn-icons-png.flaticon.com/128/25/25657.png" alt="" class="h-10 w-10"><span class="text-center font-semibold w-full md:inline hidden">Github</span></a>
+                <a href="https://www.instagram.com/its_zahid83/" class="bg-white text-black flex items-center p-2 rounded-2xl w-full block text-center custom-box-shadow"><img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="" class="h-10 w-10"><span class="text-center font-semibold w-full md:inline hidden">Instagram</span></a>
+            </div>
+            <div class="col-span-3  rounded-2xl flex items-center justify-center p-4">
+                <span class="text-xs text-center text-gray-400">thisisZahid | All Rights Reseved | 2023<br>Hosting by Github Pages<br>using Tailwind Css</span>
+            </div>
+        </footer>
 
 
     </div>
 
 </body>
 <script src="./script.js"></script>
-
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Designer'],
+      typeSpeed: 40,
+      backSpeed: 40,
+      backDelay: 1000,
+      loop:true,
+    });
+  </script>
 </html>
