@@ -11,7 +11,6 @@ let proj_arr = {"Random color generator" : "https://zahid40.github.io/projects/c
 
 let projects_collection = document.getElementById('projects_collection');
 for (let index = 0; index < Object.keys(proj_arr).length; index++) {
-    console.log("ji");
     projects_collection.innerHTML += `
 <div class="group flex flex-col items-center justify-between col-span-1  w-full md:w-full hover:w-full h-38 bg-[var(--blue)] backdrop-blur-sm rounded-2xl px-5 mb-5 hover:bg-[var(--green)] p-4 custom-box-shadow">
                 <span class="font-semibold text-1xl p-4 text-center">${Object.keys(proj_arr)[index]}</span>

@@ -17,6 +17,8 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,1,0" />
+    <script src="https://unpkg.com/shuffle-letters"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -35,53 +37,65 @@
             <div class="col-span-1">
                 <a href="#projectdiv" class="text-center font-bold"><span class="material-symbols-outlined">
                         science
-                    </span><span class="text-xs block">Projects</span>
+                    </span><span class="text-xs block suffel_elements">Projects</span>
                 </a>
             </div>
             <div class="col-span-1">
                 <a href="#contact" class="text-center font-bold"><span class="material-symbols-outlined">
                         contact_page
-                    </span> <span class="text-xs block">Contact</span> </a>
+                    </span> <span class="text-xs block suffel_elements">Contact</span> </a>
             </div>
             <div class="col-span-2 w-5/6">
                 <button
-                    class="p-3 rounded-full font-bold text-1xl w-full bg-gradient-to-r from-violet-700 to-[var(--blue)] text-[var(--white)] hover:text-[var(--black)] shadow-[0_0px_20px_-5px_blue] " onclick="email_mail()">Hire
+                    class="suffel_elements p-3 rounded-full font-bold text-1xl w-full bg-gradient-to-r from-violet-700 to-[var(--blue)] text-[var(--white)] hover:text-[var(--black)] shadow-[0_0px_20px_-5px_blue] "
+                    onclick="email_mail()">Hire
                     me</button>
             </div>
         </nav>
 
         <!-- main  -->
         <section class="flex flex-col items-center justify-center">
-            <div 
+            <div
                 class=" bg-[var(--white)] h-full w-full rounded-b-full flex flex-col justify-end items-center overflow-hidden">
                 <div class=" bg-[url(./images/profile_img_3.png)] bg-cover h-96 w-80"></div>
             </div>
-            <h1 class="text-7xl font-bold text-gray-300 text-center col-span-1 p-2 tracking-tighter" >Hi I'm <span class="text-white font-black">Zahid</span>
+            <h1 class="text-7xl font-bold text-gray-300 text-center col-span-1 p-2 tracking-tighter">Hi I'm <span
+                    class="suffel_elements text-white font-black">Zahid</span>
             </h1>
             <div class="flex">
                 <span></span>
                 <span id="element" class="inline text-[var(--yellow)]  text-2xl font-bold"></span>
             </div>
-            <p
-                class="font-semibold  px-6 py-2 w-2/3 rounded-2xl text-center text-sm">
+            <p id="into_parat" class="font-semibold  px-6 py-2 w-2/3 rounded-2xl text-center text-sm">
                 Welcome to my digital playground. I'm Zahid, a passionate web developer with a flair for creating
                 stunning, user-friendly websites</p>
         </section>
 
         <!-- buttons  -->
         <div class="w-full flex justify-center items-center p-8">
-            <button class="bg-gradient-to-r from-violet-700 to-[var(--blue)] hover:text-black   rounded-2xl px-4 py-2 flex justify-center items-center h-14 w-32 mx-4 shadow-[0_0px_50px_-5px_blue]" onclick="email_mail()">Hire Now</button>
-            <a href="./resources/Zahid_cv.pdf" download="Zahid's CV" class="bg-gradient-to-r from-[var(--red)] to-[var(--yellow)] hover:text-black rounded-2xl px-4 py-2 flex justify-center items-center h-14 w-32 mx-4 shadow-[0_0px_50px_-5px_var(--red)]"><span class="material-symbols-outlined" onclick = "downloadFile()">
-                download
+            <button
+                class="suffel_elements bg-gradient-to-r from-violet-700 to-[var(--blue)] hover:text-black   rounded-2xl px-4 py-2 flex justify-center items-center h-14 w-32 mx-4 shadow-[0_0px_50px_-5px_blue]"
+                onclick="email_mail()">Hire Now</button>
+            <a href="./resources/Zahid_cv.pdf" download="Zahid's CV"
+                class=" bg-gradient-to-r from-[var(--red)] to-[var(--yellow)] hover:text-black rounded-2xl px-4 py-2 flex justify-center items-center h-14 w-32 mx-4 shadow-[0_0px_50px_-5px_var(--red)]"><span
+                    class="material-symbols-outlined" onclick="downloadFile()">
+                    download
                 </span> CV</a>
         </div>
 
         <!-- profile -->
         <section class="py-12 px-6">
-            <div data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt-full-page-listening class=" custom-box-shadow rounded-2xl p-12 flex flex-col items-center justify-start max-w-lg min-h-96 h-auto bg-[url('./images/bg1.jpg')] bg-cover bg-center  mb-12" style="transform-style: preserve-3d; transform: perspective(1000px);">
-                <h2 class="font-bold text-2xl text-center text-yellow-100 pb-4" style="transform: translateZ(20px) ">Web Development</h2>
-                <p class="text-center text-sm h-full" style="transform: translateZ(20px) ">I am a web developer proficient in HTML, CSS, and JavaScript, enhancing my projects with Bootstrap and Tailwind for sleek designs and interactivity. I also utilize React to create dynamic, user-friendly web applications, ensuring a well-rounded skill set for crafting modern websites.</p>
-                <div class="flex justify-between flex-wrap w-full h-10 self-end  h-24 rounded-full px-6 py-2" style="transform: translateZ(20px) ">
+            <div data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt-full-page-listening
+                class=" custom-box-shadow rounded-2xl p-12 flex flex-col items-center justify-start max-w-lg min-h-96 h-auto bg-[url('./images/bg1.jpg')] bg-cover bg-center  mb-12"
+                style="transform-style: preserve-3d; transform: perspective(1000px);">
+                <h2 class=" suffel_elements font-bold text-2xl text-center text-yellow-100 pb-4" style="transform: translateZ(20px) ">Web
+                    Development</h2>
+                <p class="text-center text-sm h-full" style="transform: translateZ(20px) ">I am a web developer
+                    proficient in HTML, CSS, and JavaScript, enhancing my projects with Bootstrap and Tailwind for sleek
+                    designs and interactivity. I also utilize React to create dynamic, user-friendly web applications,
+                    ensuring a well-rounded skill set for crafting modern websites.</p>
+                <div class="flex justify-between flex-wrap w-full h-10 self-end  h-24 rounded-full px-6 py-2"
+                    style="transform: translateZ(20px) ">
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png" alt="" class="h-10 w-10">
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png" alt="" class="h-10 w-10">
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="" class="h-10 w-10">
@@ -90,12 +104,20 @@
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968322.png" alt="" class="h-10 w-10">
                 </div>
             </div>
-            <div data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt-full-page-listening class="custom-box-shadow rounded-2xl p-12 flex flex-col items-center justify-start max-w-lg min-h-96 h-auto bg-[var(--black)] bg-[url('./images/bg2.jpg')] bg-cover bg-center" style="transform-style: preserve-3d; transform: perspective(1000px);">
-                <h2 class="font-bold text-2xl text-center text-yellow-100 pb-4" style="transform: translateZ(20px) ">Designing</h2>
-                <p class="text-center text-sm h-full" style="transform: translateZ(20px) ">In addition to my web development skills, I leverage Photoshop for poster design, graphic illustrations, and Blender for 3D design assets. This diverse toolset allows me to create visually captivating websites, posters, and digital assets for a wide range of creative projects.</p>
-                <div class="flex justify-start w-full h-10 self-end h-24 rounded-full px-6 py-2" style="transform: translateZ(20px) ">
+            <div data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt-full-page-listening
+                class="custom-box-shadow rounded-2xl p-12 flex flex-col items-center justify-start max-w-lg min-h-96 h-auto bg-[var(--black)] bg-[url('./images/bg2.jpg')] bg-cover bg-center"
+                style="transform-style: preserve-3d; transform: perspective(1000px);">
+                <h2 class="suffel_elements font-bold text-2xl text-center text-yellow-100 pb-4" style="transform: translateZ(20px) ">
+                    Designing</h2>
+                <p class="text-center text-sm h-full" style="transform: translateZ(20px) ">In addition to my web
+                    development skills, I leverage Photoshop for poster design, graphic illustrations, and Blender for
+                    3D design assets. This diverse toolset allows me to create visually captivating websites, posters,
+                    and digital assets for a wide range of creative projects.</p>
+                <div class="flex justify-start w-full h-10 self-end h-24 rounded-full px-6 py-2"
+                    style="transform: translateZ(20px) ">
                     <img src="https://cdn-icons-png.flaticon.com/128/5968/5968520.png" alt="" class="h-10 w-10 ml-1 ">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/512px-Blender_logo_no_text.svg.png" alt="" class="h-10 w-auto ml-1 ">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/512px-Blender_logo_no_text.svg.png"
+                        alt="" class="h-10 w-auto ml-1 ">
                 </div>
             </div>
         </section>
@@ -111,7 +133,8 @@
         <footer id="contact" class="h-96 w-full grid grid-cols-3 gap-2 p-4">
             <div class="col-span-2 custom-box-shadow rounded-2xl p-2 flex flex-col items-center justify-around w-full">
                 <div class="flex items-start justify-start w-full ">
-                    <div class=" bg-cover bg-center aspect-square w-12" style="background-image: url('./images/logo3.png');"></div>
+                    <div class=" bg-cover bg-center aspect-square w-12"
+                        style="background-image: url('./images/logo3.png');"></div>
                     <span class="text-sm">Designer's <br> Freedom</span>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 place-items-center gap-2 w-full px-3 text-xs">
@@ -125,14 +148,28 @@
                     <a href="https://fontawesome.com/" class="text-gray-400 hover:text-white">fontawesome</a>
                 </div>
             </div>
-            <div class="col-span-1 custom-box-shadow rounded-2xl p-12 flex flex-col items-center justify-around space-y-2">
-                <button  class="bg-white text-black flex items-center p-2 rounded-2xl w-full block custom-box-shadow" onclick="email_mail()"><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="" class="h-10 w-10"><span class="text-center font-semibold w-full md:inline hidden">Email</span></button>
-                <a href="https://www.linkedin.com/in/zahid-ansari-53354926a" class="bg-white text-black flex items-center p-2 rounded-2xl w-full block text-center custom-box-shadow"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="" class="h-10 w-10"><span class="text-center font-semibold w-full md:inline hidden">Linkdin</span></a>
-                <a href="https://github.com/Zahid40" class="bg-white text-black flex items-center p-2 rounded-2xl w-full block text-center custom-box-shadow"><img src="https://cdn-icons-png.flaticon.com/128/25/25657.png" alt="" class="h-10 w-10"><span class="text-center font-semibold w-full md:inline hidden">Github</span></a>
-                <a href="https://www.instagram.com/its_zahid83/" class="bg-white text-black flex items-center p-2 rounded-2xl w-full block text-center custom-box-shadow"><img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="" class="h-10 w-10"><span class="text-center font-semibold w-full md:inline hidden">Instagram</span></a>
+            <div
+                class="col-span-1 custom-box-shadow rounded-2xl p-2 flex flex-col items-center justify-around space-y-2">
+                <button class="bg-white text-black flex items-center p-2 rounded-2xl w-full block custom-box-shadow"
+                    onclick="email_mail()"><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt=""
+                        class="h-10 w-10"><span
+                        class="text-center font-semibold w-full md:inline hidden">Email</span></button>
+                <a href="https://www.linkedin.com/in/zahid-ansari-53354926a"
+                    class="bg-white text-black flex items-center p-2 rounded-2xl w-full block text-center custom-box-shadow"><img
+                        src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="" class="h-10 w-10"><span
+                        class="text-center font-semibold w-full md:inline hidden">Linkdin</span></a>
+                <a href="https://github.com/Zahid40"
+                    class="bg-white text-black flex items-center p-2 rounded-2xl w-full block text-center custom-box-shadow"><img
+                        src="https://cdn-icons-png.flaticon.com/128/25/25657.png" alt="" class="h-10 w-10"><span
+                        class="text-center font-semibold w-full md:inline hidden">Github</span></a>
+                <a href="https://www.instagram.com/its_zahid83/"
+                    class="bg-white text-black flex items-center p-2 rounded-2xl w-full block text-center custom-box-shadow"><img
+                        src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="" class="h-10 w-10"><span
+                        class="text-center font-semibold w-full md:inline hidden">Instagram</span></a>
             </div>
             <div class="col-span-3  rounded-2xl flex items-center justify-center p-4">
-                <span class="text-xs text-center text-gray-400">thisisZahid | All Rights Reseved | 2023<br>Hosting by Github Pages<br>using Tailwind Css</span>
+                <span class=" text-xs text-center text-gray-400">thisisZahid | All Rights Reseved | 2023<br>Hosting by
+                    Github Pages<br>using Tailwind Css</span>
             </div>
         </footer>
 
@@ -142,15 +179,38 @@
 </body>
 <script src="./script.js"></script>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+    integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Setup and start animation! -->
 <script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Designer'],
-      typeSpeed: 40,
-      backSpeed: 40,
-      backDelay: 1000,
-      loop:true,
+        strings: ['Web Developer', 'Designer'],
+        typeSpeed: 40,
+        backSpeed: 40,
+        backDelay: 1000,
+        loop: true,
     });
-  </script>
+
+    // Get all elements with the class '.suffel_elements'
+const elementsToShuffle = document.querySelectorAll('.suffel_elements');
+
+// Iterate through the elements and apply the shuffle effect to each
+elementsToShuffle.forEach((element) => {
+  // Replace 'initialText' with the text content you want to shuffle
+  const initialText = element.textContent;
+  
+  shuffleLetters(element, {
+    text: initialText,
+    iterations: 50,
+    fps: 30,
+    onComplete: (el) => {
+      console.log('Effect was completed for element:', el);
+    }
+  });
+});
+
+    
+</script>
+
 </html>
