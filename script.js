@@ -1,12 +1,8 @@
-let proj_arr = {"Random color generator" : "https://zahid40.github.io/projects/color",
-                "Friends" : "https://zahid40.github.io/projects/friends/",
+let proj_arr = { "Qr Generator" : "https://zahid40.github.io/projects/qrgen/" ,"Random color generator" : "https://zahid40.github.io/projects/color",
                 "Rick and Morty" : "https://zahid40.github.io/projects/rickandmorty",
-                "PDFX ( Pdf tool )" : "https://zahid40.github.io/projects/pdftools/",
                 "Dog facts" : "https://zahid40.github.io/projects/dogfacts",
                 "Password generator" : "https://zahid40.github.io/projects/genpass",
-                "Spiderman theme Website" : "https://zahid40.github.io/projects/spidermanweb",
                 "Todo" : "https://zahid40.github.io/projects/todo",
-                "Alarm Clock" : "https://zahid40.github.io/projects/alarmclock",
                 "Calculator" : "https://zahid40.github.io/projects/calculator"};
 
 let projects_collection = document.getElementById('projects_collection');
