@@ -1,3 +1,5 @@
+window.location.replace("https://zahid.vercel.app");
+
 let proj_arr = { "Qr Generator" : "https://zahid40.github.io/projects/qrgen/" ,"Random color generator" : "https://zahid40.github.io/projects/color",
                 "Rick and Morty" : "https://zahid40.github.io/projects/rickandmorty",
                 "Dog facts" : "https://zahid40.github.io/projects/dogfacts",
